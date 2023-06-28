@@ -1,6 +1,6 @@
 # Fictional Names
 
-[![PyPI version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&r=r&ts=1683906897&type=6e&v=0.1.0&x2=0)](https://pypi.org/project/fictional-names/)
+[![PyPI version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&r=r&ts=1683906897&type=6e&v=0.1.1&x2=0)](https://pypi.org/project/fictional-names/)
 
 A Python package for generating fictional names for characters in your fantasy stories, Dungeons & Dragons, RPGs, or whatever else you need them for.
 

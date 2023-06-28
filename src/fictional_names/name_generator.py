@@ -1,7 +1,10 @@
-from . import arab, aztec, chinese, dwarven, elven, english, giant, halfling, japanese, mongolian, norsemen, orc, slavic, greek, steampunk, tolkien, viking, germanic, turkish, human, martin, jordan, erikson, roman, rowling, sapkowski
 from random import choice
+from . import arab, aztec, chinese, dwarven, elven, english, giant, halfling, japanese, mongolian, norsemen, orc, slavic, greek, steampunk, tolkien, viking, germanic, turkish, human, martin, jordan, erikson, roman, rowling, sapkowski
 
-def generate_name(gender=choice(["female", "male"]), style="human", library=True):
+styles = ['arab', 'aztec', 'chinese', 'dwarven', 'elven', 'english', 'giant', 'halfling', 'japanese', 'mongolian', 'norsemen', 'orc', 'slavic', 'greek', 'steampunk', 'tolkien', 'viking', 'germanic', 'turkish', 'human', 'martin', 'jordan', 'erikson', 'roman', 'rowling', 'sapkowski']
+
+
+def generate_name(gender=choice(["female", "male"]), style=choice(styles), library=choice([True, False])):
     if type(gender) != str:
         raise TypeError("Invalid gender type.")
     if type(style) != str:

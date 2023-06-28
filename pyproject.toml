@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fictional_names"
-version = "0.0.7"
+version = "0.1.0"
 authors = [
   { name="a-tsagkalidis", email="arg.tsag@gmail.com" },
 ]
-description = "A package for generating fictional names"
+description = "A package for generating fictional names."
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/a-tsagkalidis/fictional_names_package"
+"Bug Tracker" = "https://github.com/a-tsagkalidis/fictional_names_package/issues"

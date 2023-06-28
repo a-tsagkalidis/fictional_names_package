@@ -161,3 +161,4 @@ cython_debug/
 
 # Custom
 /loop.ps1
+/.vscode

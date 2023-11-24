@@ -1,12 +1,3 @@
-from random import choice
-from .supportive_functions import (
-    generate_female_name,
-    generate_male_name,
-    generate_surname,
-    remove_duplicates,
-)
-
-
 female_prefix = [
     "bal",
     "da",
@@ -56,7 +47,6 @@ female_suffix = [
     "thra",
     "zǎ",
 ]
-
 
 male_prefix = [
     "az",
@@ -134,7 +124,6 @@ male_suffix = [
     "var",
     "zin",
 ]
-
 
 surname_syllables = [
     "bar",
@@ -736,11 +725,3 @@ surnames = [
     "Yewshield",
     "Yewstrike",
 ]
-
-female = generate_female_name(female_prefix, female_suffix, min=1, max=2)
-male = generate_male_name(male_prefix, male_suffix, min=1, max=1)
-surname = generate_surname(surname_syllables, min=1, max=3)
-
-female_lbr = choice(female_names)
-male_lbr = choice(male_names)
-surname_lbr = choice(surnames)

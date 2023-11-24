@@ -1,7 +1,7 @@
 from random import choice, randint
 
 
-def generate_female_name(female_prefix, female_suffix, min=1, max=2):
+def generate_female_name(female_prefix, female_suffix, min=1, max=1):
     while True:
         try:
             num_prefix_syllables = randint(min, max)
@@ -27,7 +27,7 @@ def generate_female_name(female_prefix, female_suffix, min=1, max=2):
             continue
 
 
-def generate_male_name(male_prefix, male_suffix, min=1, max=2):
+def generate_male_name(male_prefix, male_suffix, min=1, max=1):
     while True:
         try:
             num_prefix_syllables = randint(min, max)
@@ -53,7 +53,7 @@ def generate_male_name(male_prefix, male_suffix, min=1, max=2):
             continue
 
 
-def generate_surname(surname_syllables, min=1, max=3):
+def generate_surname(surname_syllables, min=2, max=3):
     num_syllables = randint(min, max)
     synth_surname = ""
     for _ in range(num_syllables):
@@ -82,7 +82,31 @@ def remove_duplicates(namelist):
     return namelist_ordered
 
 
-# print(remove_duplicates(surnames))
-
-# for name in female_names:
-#     print("'", name.capitalize(), "'", sep='', end=', ')
+styles = [
+    'arab',
+    'aztec',
+    'chinese',
+    'dwarven',
+    'elven',
+    'english',
+    'giant',
+    'halfling',
+    'japanese',
+    'mongolian',
+    'norsemen',
+    'orc',
+    'slavic',
+    'greek',
+    'steampunk',
+    'tolkien',
+    'viking',
+    'germanic',
+    'turkish',
+    'human',
+    'martin',
+    'jordan',
+    'erikson',
+    'roman',
+    'rowling',
+    'sapkowski'
+    ]

@@ -1,11 +1,3 @@
-from random import choice
-from .supportive_functions import (
-    generate_female_name,
-    generate_male_name,
-    remove_duplicates,
-)
-
-
 female_prefix = [
     "ada",
     "al",
@@ -1350,10 +1342,3 @@ surnames = [
     "Zamojski",
     "Zeller",
 ]
-
-female = generate_female_name(female_prefix, female_suffix, min=1, max=1)
-male = generate_male_name(male_prefix, male_suffix, min=1, max=1)
-surname = choice(surnames)
-
-female_lbr = choice(female_names)
-male_lbr = choice(male_names)

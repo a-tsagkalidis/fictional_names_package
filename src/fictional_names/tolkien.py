@@ -1,12 +1,3 @@
-from random import choice
-from .supportive_functions import (
-    generate_female_name,
-    generate_male_name,
-    generate_surname_less,
-    remove_duplicates,
-)
-
-
 male_prefix = [
     "aer",
     "ald",
@@ -676,16 +667,3 @@ surnames = [
     "of the Grey Havens",
     "of the Shire",
 ]
-
-female = generate_female_name(female_prefix, female_suffix)
-male = generate_male_name(male_prefix, male_suffix)
-surname = generate_surname_less(surname_prefix, surname_suffix)
-
-female_lbr = choice(female_names)
-male_lbr = choice(male_names)
-surname_lbr = choice(surnames)
-
-# print(remove_duplicates(surnames))
-
-# for name in female_names:
-#     print("'", name.capitalize(), "'", sep='', end=', ')

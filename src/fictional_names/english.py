@@ -1,6 +1,3 @@
-from random import choice
-
-
 female_names = [
     "Abigail",
     "Addison",
@@ -1105,11 +1102,3 @@ surnames_lbr = [
     "Wade",
     "Watkins",
 ]
-
-female = choice(female_names)
-male = choice(male_names)
-surname = choice(surnames)
-
-female_lbr = choice(female_names_lbr)
-male_lbr = choice(male_names_lbr)
-surname_lbr = choice(surnames_lbr)

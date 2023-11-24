@@ -1,11 +1,3 @@
-from random import choice
-from .supportive_functions import (
-    generate_female_name,
-    generate_male_name,
-    remove_duplicates,
-)
-
-
 female_prefix = [
     "az",
     "barg",
@@ -549,11 +541,3 @@ titles = [
     "the Wound",
     "the Wrecking Ball",
 ]
-
-female = generate_female_name(female_prefix, female_suffix, min=0, max=1)
-male = generate_male_name(male_prefix, male_suffix, min=0, max=1)
-surname = choice(titles)
-
-female_lbr = choice(female_names)
-male_lbr = choice(male_names)
-surname_lbr = choice(surnames)

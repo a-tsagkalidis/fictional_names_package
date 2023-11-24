@@ -1,6 +1,3 @@
-from random import choice
-from .supportive_functions import remove_duplicates
-
 female_names = [
     "Abigail",
     "Ada",
@@ -1577,11 +1574,3 @@ surnames_lbr = [
     "Zamojski",
     "Zeller",
 ]
-
-female = choice(female_names)
-male = choice(male_names)
-surname = choice(surnames)
-
-female_lbr = choice(female_names_lbr)
-male_lbr = choice(male_names_lbr)
-surname_lbr = choice(surnames_lbr)

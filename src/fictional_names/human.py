@@ -1,7 +1,3 @@
-from random import choice
-from .supportive_functions import generate_surname_less, remove_duplicates
-
-
 female_names = [
     "Adelaide",
     "Adriana",
@@ -453,8 +449,3 @@ surnames = [
     "Zuber",
     "Zumwinkel",
 ]
-
-female = choice(female_names)
-male = choice(male_names)
-surname = generate_surname_less(surname_prefix, surname_suffix)
-surname_lbr = choice(surnames)

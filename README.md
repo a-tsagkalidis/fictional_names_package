@@ -1,6 +1,6 @@
 # Fictional Names
 
-[![PyPI version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&r=r&ts=1683906897&type=6e&v=0.2.2&x2=0)](https://pypi.org/project/fictional-names/)
+[![PyPI version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&r=r&ts=1683906897&type=6e&v=1.0.0&x2=0)](https://pypi.org/project/fictional-names/)
 
 A Python package for generating fictional names for characters in your fantasy stories, Dungeons & Dragons, RPGs, or whatever else you need them for.
 
@@ -15,7 +15,7 @@ The generate_name function is the main function of the package, and it can be us
 
 **`gender`** can be either `'male'` or`'female'`. Leave it blank if you want random gender.
 
-**`style`** can be any of the following: `'arab'`, `'aztec'`, `'chinese'`, `'dwarven'`, `'elven'`, `'english'`, `'eriskon'`, `'germanic'`, `'giant'`, `'greek'`, `'halfling'`, `'human'`, `'japanese'`, `'jordan'`, `'martin'`, `'mongolian'`, `'norsemen'`, `'orc'`, `'roman'`, `'rowling'`, `'sapkowski'`, `'slavic'`, `'steampunk'`, `'tolkien'`, `'turkish'`, or `'viking'`. Leave it blank if you want a random style.
+**`style`** can be any of the following: `'arab'`, `'aztec'`, `'chinese'`, `'dragonborn'`, `'drow'`, `'dwarven'`, `'elven'`, `'english'`, `'eriskon'`, `'germanic'`, `'giant'`, `'gnomish'`, `'greek'`, `'halfling'`, `'human'`, `'japanese'`, `'jordan'`, `'martin'`, `'mongolian'`, `'norsemen'`, `'orc'`, `'roman'`, `'rowling'`, `'sapkowski'`, `'slavic'`, `'steampunk'`, `'tolkien'`, `'turkish'`, or `'viking'`. Leave it blank if you want a random style.
 
 **Most styles are obvious, but some of them are named after famous authors, and some of them are named after famous fantasy races.*
 

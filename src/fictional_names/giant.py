@@ -26,7 +26,7 @@ female_prefix = [
 ]
 
 female_suffix = [
-    "a",
+    "ab",
     "ah",
     "al",
     "an",
@@ -53,7 +53,6 @@ female_suffix = [
     "en",
     "er",
     "eth",
-    "i",
     "ia",
     "il",
     "in",
@@ -61,7 +60,6 @@ female_suffix = [
     "is",
     "ish",
     "ith",
-    "l",
     "la",
     "le",
     "lin",
@@ -162,7 +160,7 @@ male_prefix = [
     "nar",
     "nel",
     "nor",
-    "o",
+    "og",
     "or",
     "ra",
     "ran",

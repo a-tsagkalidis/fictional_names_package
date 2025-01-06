@@ -1,4 +1,3 @@
-import sys
 from random import choice
 from .supportive_functions import (
     generate_female_name,
@@ -7,7 +6,7 @@ from .supportive_functions import (
     generate_surname_less,
     styles
 )
-from . import arab, aztec, chinese, dwarven, elven, english, giant, halfling, japanese, mongolian, norsemen, orc, slavic, greek, steampunk, tolkien, viking, germanic, turkish, human, martin, jordan, erikson, roman, rowling, sapkowski
+from . import arab, aztec, chinese, dragonborn, drow, dwarven, elven, english, giant, gnomish, halfling, japanese, mongolian, norsemen, orc, slavic, greek, steampunk, tolkien, viking, germanic, turkish, human, martin, jordan, erikson, roman, rowling, sapkowski
 
 
 def generate_name(gender=choice(["female", "male"]), style=choice(styles), library=choice([True, False])):
@@ -22,10 +21,16 @@ def generate_name(gender=choice(["female", "male"]), style=choice(styles), libra
     if gender.lower() == "female":
         if style.lower() == "elven":
             name = choice(elven.female_names) if library else generate_female_name(elven.female_prefix, elven.female_suffix)
+        elif style.lower() == "dragonborn":
+            name = choice(dragonborn.female_names) if library else generate_female_name(dragonborn.female_prefix, dragonborn.female_suffix)
+        elif style.lower() == "drow":
+            name = choice(drow.female_names) if library else generate_female_name(drow.female_prefix, drow.female_suffix)
         elif style.lower() == "dwarven":
             name = choice(dwarven.female_names) if library else generate_female_name(dwarven.female_prefix, dwarven.female_suffix, min=1, max=2)
         elif style.lower() == "giant":
             name = choice(giant.female_names) if library else generate_female_name(giant.female_prefix, giant.female_suffix, min=0, max=1)
+        elif style.lower() == "gnomish":
+            name = choice(gnomish.female_names) if library else generate_female_name(gnomish.female_prefix, gnomish.female_suffix)
         elif style.lower() == "halfling":
             name = choice(halfling.female_names) if library else generate_female_name(halfling.female_prefix, halfling.female_suffix)
         elif style.lower() == "orc":
@@ -77,8 +82,14 @@ def generate_name(gender=choice(["female", "male"]), style=choice(styles), libra
     elif gender.lower() == "male":
         if style.lower() == "elven":
             name = choice(elven.male_names) if library else generate_male_name(elven.male_prefix, elven.male_suffix)
+        elif style.lower() == "dragonborn":
+            name = choice(dragonborn.male_names) if library else generate_male_name(dragonborn.male_prefix, dragonborn.male_suffix)
+        elif style.lower() == "drow":
+            name = choice(drow.male_names) if library else generate_male_name(drow.male_prefix, drow.male_suffix)
         elif style.lower() == "dwarven":
             name = choice(dwarven.male_names) if library else generate_male_name(dwarven.male_prefix, dwarven.male_suffix)
+        elif style.lower() == "gnomish":
+            name = choice(gnomish.male_names) if library else generate_male_name(gnomish.male_prefix, gnomish.male_suffix)
         elif style.lower() == "giant":
             name = choice(giant.male_names) if library else generate_male_name(giant.male_prefix, giant.male_suffix, min=0, max=1)
         elif style.lower() == "halfling":
@@ -133,10 +144,16 @@ def generate_name(gender=choice(["female", "male"]), style=choice(styles), libra
     # Surnames section
     if style.lower() == "elven":
         surname = choice(elven.surnames) if library else generate_surname(elven.surname_syllables)
+    elif style.lower() == "dragonborn":
+        surname = choice(dragonborn.surnames) if library else generate_surname_less(dragonborn.surname_prefix, dragonborn.surname_suffix)
+    elif style.lower() == "drow":
+        surname = choice(drow.surnames) if library else generate_surname(drow.surname_syllables)
     elif style.lower() == "dwarven":
         surname = choice(dwarven.surnames) if library else generate_surname(dwarven.surname_syllables, min=1, max=3)
     elif style.lower() == "giant":
         surname = choice(giant.surnames) if library else generate_surname_less(giant.surname_prefix, giant.surname_suffix)
+    elif style.lower() == "gnomish":
+        surname = choice(gnomish.surnames) if library else generate_surname_less(gnomish.surname_prefix, gnomish.surname_suffix)
     elif style.lower() == "halfling":
         surname = choice(halfling.surnames) if library else generate_surname_less(halfling.surname_prefix, halfling.surname_suffix)
     elif style.lower() == "orc":
@@ -189,11 +206,3 @@ def generate_name(gender=choice(["female", "male"]), style=choice(styles), libra
         )
 
     return f"{name} {surname}"
-
-
-if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        generated_name = generate_name(gender=sys.argv[1], style=sys.argv[2], library=bool(sys.argv[3]))
-    else:
-        generated_name = generate_name()
-    print(generated_name)
